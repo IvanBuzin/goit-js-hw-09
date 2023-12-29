@@ -92,3 +92,15 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
+
+lightbox.on('shown.simplelightbox', (e) => {
+ 
+  setTimeout(() => {
+    const { alt } = e.target;
+    const captionElement = e.target.getElementsByClassName('sl-image-caption')[0];
+    
+    if (captionElement) {
+      captionElement.textContent = alt;
+    }
+  }, 250);
+});
