@@ -1,5 +1,7 @@
+// Описаний в документації
 import SimpleLightbox from "simplelightbox";
-import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
  
 const gallery = document.querySelector(".gallery");
 
