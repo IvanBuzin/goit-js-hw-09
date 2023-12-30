@@ -15,71 +15,7 @@
 
 </head>
 
-<body><!--
-  <style>
-    .gallery {
-      display: flex;
-      width: 1440px;
-      height: 696px;
-      padding: 24px 156px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 24px;
-
-
-      background: #FFF;
-    }
-
-    a.gallery-link {
-      width: 360px;
-    }
-
-    .gallery-item {
-      display: flex;
-      flex-direction: row;
-      gap: 24px;
-      width: 1128px;
-      height: 200px;
-      flex-shrink: 0;
-    }
-
-
-    .gallery-image {
-      width: 360px;
-      height: 200px;
-      flex-shrink: 0;
-      box-sizing: border-box;
-      transform: scale(1);
-      transition: 250ms ease-out;
-    }
-
-
-
-    .gallery-image:hover,
-    .gallery-image:focus {
-      transform: scale(1.04);
-    }
-
-    .simple-lightbox {
-      background: rgba(46, 47, 66, 0.8);
-    }
-
-    .simple-lightbox button.sl-close,
-    .simple-lightbox .sl-navigation button.sl-prev,
-    .simple-lightbox .sl-navigation button.sl-next {
-      color: #fff;
-    }
-
-    div.simple-lightbox div.sl-counter {
-      color: #fff;
-    }
-
-    ul {
-      list-style-type: none;
-
-    }
-  </style>-->
+<body>
 
   <section>
     <ul>
@@ -90,45 +26,10 @@
     </ul>
   </section>
 
-  <ul class="gallery">
-    <li class="gallery-item">
-      <a class="gallery-link" href="">
-        <img class="gallery-image" src="" alt="Image description" />
-      </a>
-      <a class="gallery-link" href="">
-        <img class="gallery-image" src="" alt="Image description" />
-      </a>
-      <a class="gallery-link" href="">
-        <img class="gallery-image" src="" alt="Image description" />
-      </a>
-    </li>
-    <li class="gallery-item">
-      <a class="gallery-link" href="">
-        <img class="gallery-image" src="" alt="Image description" />
-      </a>
-      <a class="gallery-link" href="">
-        <img class="gallery-image" src="" alt="Image description" />
-      </a>
-      <a class="gallery-link" href="">
-        <img class="gallery-image" src="" alt="Image description" />
-      </a>
-    </li>
-    <li class="gallery-item">
-      <a class="gallery-link" href="">
-        <img class="gallery-image" src="" alt="Image description" />
-      </a>
-      <a class="gallery-link" href="">
-        <img class="gallery-image" src="" alt="Image description" />
-      </a>
-      <a class="gallery-link" href="">
-        <img class="gallery-image" src="" alt="Image description" />
-      </a>
-    </li>
-
-  </ul>
+  <ul class="gallery"></ul>
 
   <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.0/dist/basicLightbox.min.js"></script>
-  <script type="modyle" src="./js/1-gallery.js"></script>
+  <script type="modyle" src="../src/js/1-gallery.js"></script>
 </body>
 
 </html>
