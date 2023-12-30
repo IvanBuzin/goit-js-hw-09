@@ -1,8 +1,6 @@
-'use strict';
 
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
-import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
+
+
 
 const images = [
   {
@@ -69,6 +67,10 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
+
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
 
 const gallery = document.querySelector('.gallery');
 
