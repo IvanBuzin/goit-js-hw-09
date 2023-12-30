@@ -1,5 +1,5 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
+import SimpleLightbox from "simplelightbox";
+import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
 
 const images = [
   {
@@ -87,20 +87,9 @@ gallery.innerHTML = images.reduce(
   ""
 );
 
-var lightbox = new SimpleLightbox(".gallery a", {
-  captionsData: "alt",
-  captionDelay: 250,
-});
+var lightbox = new SimpleLightbox('.gallery a', { captionsData: "alt",
+  captionDelay: 250, });
 
-lightbox.on("shown.simplelightbox", (e) => {
- 
-  setTimeout(() => {
-    const { alt } = e.target;
-    const captionElement = e.target.getElementsByClassName("sl-image-caption")[0];
-    
-   if (captionElement) {
-      captionElement.textContent = alt;
-    }
-  }, 250);
-});
+
+
 
