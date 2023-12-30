@@ -2,6 +2,11 @@
 
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
+
+import SimpleLightbox from "simplelightbox";
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 const images = [
   {
@@ -72,14 +77,14 @@ const images = [
 const gallery = document.querySelector('.gallery');
 
 gallery.innerHTML = images.reduce(
-  (acc, { preview, original, description }) =>
-    acc +
+  (html, image) =>
+    html +
     `<li class="gallery-item">
-      <a class="gallery-link" href="${original}">
+      <a class="gallery-link" href="${image.original}">
         <img
             class="gallery-image"
-            src="${preview}"
-            alt="${description}"
+            src="${image.preview}"
+            alt="${image.description}"
             width="360"
             height="200"
             />
@@ -93,14 +98,14 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
-lightbox.on('shown.simplelightbox', (e) => {
+//lightbox.on('shown.simplelightbox', (e) => {
  
-  setTimeout(() => {
-    const { alt } = e.target;
-    const captionElement = e.target.getElementsByClassName('sl-image-caption')[0];
+  //setTimeout(() => {
+  //  const { alt } = e.target;
+  //  const captionElement = e.target.getElementsByClassName('sl-image-caption')[0];
     
-    if (captionElement) {
-      captionElement.textContent = alt;
-    }
-  }, 250);
-});
+  //  if (captionElement) {
+   //   captionElement.textContent = alt;
+  //  }
+//  }, 250);
+//});
