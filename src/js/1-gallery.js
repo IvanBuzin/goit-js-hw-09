@@ -4,10 +4,6 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
 
-import SimpleLightbox from "simplelightbox";
-// Додатковий імпорт стилів
-import "simplelightbox/dist/simple-lightbox.min.css";
-
 const images = [
   {
     preview:
@@ -98,14 +94,14 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
-//lightbox.on('shown.simplelightbox', (e) => {
+lightbox.on('shown.simplelightbox', (e) => {
  
-  //setTimeout(() => {
-  //  const { alt } = e.target;
-  //  const captionElement = e.target.getElementsByClassName('sl-image-caption')[0];
+  setTimeout(() => {
+    const { alt } = e.target;
+    const captionElement = e.target.getElementsByClassName('sl-image-caption')[0];
     
-  //  if (captionElement) {
-   //   captionElement.textContent = alt;
-  //  }
-//  }, 250);
-//});
+   if (captionElement) {
+      captionElement.textContent = alt;
+    }
+  }, 250);
+});
