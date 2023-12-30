@@ -68,7 +68,7 @@ const images = [
 ];
 
 
-const gallery = document.querySelector('.gallery');
+const gallery = document.querySelector(".gallery");
 
 gallery.innerHTML = images.reduce(
   (html, image) =>
@@ -87,19 +87,20 @@ gallery.innerHTML = images.reduce(
   ""
 );
 
-var lightbox = new SimpleLightbox('.gallery a', {
-  captionsData: 'alt',
+var lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
   captionDelay: 250,
 });
 
-lightbox.on('shown.simplelightbox', (e) => {
+lightbox.on("shown.simplelightbox", (e) => {
  
   setTimeout(() => {
     const { alt } = e.target;
-    const captionElement = e.target.getElementsByClassName('sl-image-caption')[0];
+    const captionElement = e.target.getElementsByClassName("sl-image-caption")[0];
     
    if (captionElement) {
       captionElement.textContent = alt;
     }
   }, 250);
 });
+
