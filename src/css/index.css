@@ -43,16 +43,6 @@ a.gallery-link {
   background: rgba(46, 47, 66, 0.8);
 }
 
-.simple-lightbox button.sl-close,
-.simple-lightbox .sl-navigation button.sl-prev,
-.simple-lightbox .sl-navigation button.sl-next {
-  color: #e49595;
-}
-
-div.simple-lightbox div.sl-counter {
-  color: hsl(0, 86%, 61%);
-}
-
 ul {
   list-style-type: none;
 }
