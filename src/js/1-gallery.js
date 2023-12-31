@@ -2,7 +2,6 @@
 import SimpleLightbox from "simplelightbox";
 
 import "simplelightbox/dist/simple-lightbox.min.css";
- 
 
 const images = [
   {
@@ -70,10 +69,6 @@ const images = [
   },
 ];
 
-
-
-
-
 const gallery = document.querySelector('.gallery');
 
 gallery.innerHTML = images.reduce(
@@ -93,8 +88,4 @@ gallery.innerHTML = images.reduce(
   ""
 );
 
-let gallery = new SimpleLightbox('.gallery a', {
-  captionsData: "alt",
-  captionDelay: 250,
-});
-
+let gallery = new SimpleLightbox('.gallery a', { captionDelay: 250, captionsData: 'alt' });
