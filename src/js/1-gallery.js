@@ -1,5 +1,8 @@
 'use strict';
+import SimpleLightbox from "simplelightbox";
 
+import "simplelightbox/dist/simple-lightbox.min.css";
+ 
 
 const images = [
   {
@@ -68,10 +71,7 @@ const images = [
 ];
 
 
-import SimpleLightbox from "simplelightbox";
 
-import "simplelightbox/dist/simple-lightbox.min.css";
- 
 
 
 const gallery = document.querySelector('.gallery');
