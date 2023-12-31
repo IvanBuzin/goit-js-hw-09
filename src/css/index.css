@@ -46,11 +46,11 @@ a.gallery-link {
 .simple-lightbox button.sl-close,
 .simple-lightbox .sl-navigation button.sl-prev,
 .simple-lightbox .sl-navigation button.sl-next {
-  color: #fff;
+  color: #e49595;
 }
 
 div.simple-lightbox div.sl-counter {
-  color: #fff;
+  color: hsl(0, 86%, 61%);
 }
 
 ul {
