@@ -85,6 +85,6 @@ gallery.innerHTML = images.reduce(
       </a>
     </li>`,
   ""
-);
+)
 
 let gallery = new SimpleLightbox('.gallery a', { captionDelay: 250, captionsData: 'alt' });
