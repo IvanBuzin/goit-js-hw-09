@@ -68,7 +68,7 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
+ gallery = document.querySelector('.gallery');
 
 gallery.innerHTML = images.reduce(
   (html, image) =>
@@ -87,4 +87,4 @@ gallery.innerHTML = images.reduce(
   ""
 );
 
-const gallery = new SimpleLightbox('.gallery a', { captionDelay: 250, captionsData: 'alt' });
+let gallery = new SimpleLightbox('.gallery a', { captionDelay: 250, captionsData: 'alt' });
