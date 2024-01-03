@@ -42,7 +42,8 @@ a.gallery-link {
   background: rgba(46, 47, 66, 0.8);
 }
 
-ul {
+ul,
+.nav-list {
   list-style-type: none;
 }
 
