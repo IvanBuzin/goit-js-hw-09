@@ -1,7 +1,6 @@
 /*-------Gallery--------*/
 .gallery {
   display: flex;
-  width: 1440px;
   height: 696px;
   padding: 24px 156px;
   flex-direction: column;
@@ -20,7 +19,6 @@ a.gallery-link {
   display: flex;
   flex-direction: row;
   gap: 24px;
-  width: 1128px;
   height: 200px;
   flex-shrink: 0;
 }
