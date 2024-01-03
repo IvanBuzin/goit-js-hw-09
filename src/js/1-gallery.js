@@ -87,4 +87,4 @@ gallery.innerHTML = images.reduce(
   ""
 );
 
-let lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250, captionsData: 'alt' });
+const lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250, captionsData: 'alt' });
